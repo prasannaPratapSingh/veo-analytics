@@ -9,9 +9,11 @@
     "./styles.css": "./src/styles/player.css",
     "./testing": "./src/testing/index.ts"
   },
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
-    "build": "tsc --noEmit",
+    "build": "node init && tsc --noEmit",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },

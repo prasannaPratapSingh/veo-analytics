@@ -3,13 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node --watch --env-file-if-exists=../../.env src/index.ts",
-    "start": "node --env-file-if-exists=../../.env src/index.ts",
+    "dev": "node init && node --watch --env-file-if-exists=../../.env src/index.ts",
+    "start": "node init && node --env-file-if-exists=../../.env src/index.ts",
     "purge:course-deletions": "node --env-file-if-exists=../../.env src/jobs/course-retention.ts",
     "purge:sessions": "node --env-file-if-exists=../../.env src/jobs/session-retention.ts",
     "notifications:process": "node --env-file-if-exists=../../.env src/jobs/notification-worker.ts",
     "instructor:cli": "node --env-file-if-exists=../../.env src/cli/instructor.ts",
-    "build": "tsc --noEmit",
+    "build": "node init && tsc --noEmit",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

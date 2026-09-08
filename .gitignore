@@ -6,9 +6,9 @@ node_modules/
 .data/
 build/
 .react-router/
-.env
 *.log
 .DS_Store
 s3-bucket/
 dist/
 scratch/
+config.bat
